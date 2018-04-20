@@ -33,19 +33,28 @@ app.get('/user/:id', (req, res) => {
 
     res.json(users)
   })
+})
 
-  // res.end()
+app.get("/users", (req, res) => {
+  const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    database: 'lbta_mysql'
+  })
+  const queryString = "SELECT * FROM users"
+  connection.query(queryString, (err, rows, fields) => {
+    if (err) {
+      console.log("Failed to query for users: " + err)
+      res.sendStatus(500)
+      return
+    }
+    res.json(rows)
+  })
 })
 
 app.get("/", (req, res) => {
   console.log("Responding to root route")
   res.send("Hello from ROOOOOT")
-})
-
-app.get("/users", (req, res) => {
-  var user1 = {firstName: "Stephen", lastName: "Curry"}
-  const user2 = {firstName: "Kevin", lastName: "Durant"}
-  res.json([user1, user2])
 })
 
 // localhost:3003
