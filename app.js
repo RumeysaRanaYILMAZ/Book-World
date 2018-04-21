@@ -69,11 +69,7 @@ app.get('/user/:id', (req, res) => {
 })
 
 app.get("/users", (req, res) => {
-  const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    database: 'lbta_mysql'
-  })
+  const connection = getConnection()
   const queryString = "SELECT * FROM users"
   connection.query(queryString, (err, rows, fields) => {
     if (err) {
