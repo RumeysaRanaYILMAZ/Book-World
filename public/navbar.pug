@@ -1,0 +1,64 @@
+// Authors :Rumeysa Rana YILMAZ using bootstrap
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel='stylesheet' href='css/navbar.css')
+  title Bubble Effect
+  link(href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
+nav
+  .hamburger
+    .line
+    .line
+    .line
+  ul.nav-links
+    if isAuthenticated
+      li
+        a(href='http://localhost:3009/categories')
+          i.fa.fa-book(aria-hidden='true')
+          | Book
+      li
+        a(href='http://localhost:3009/mybooks')
+          i.fa.fa-laptop(aria-hidden='true')  
+          | MyBooks
+      li
+        a(href='http://localhost:3009/about')
+          i.fa.fa-info-circle(aria-hidden='true')
+          | About
+      li
+        a(href='http://localhost:3009/logout')
+          i.fa.fa-sign-in(aria-hidden='true')
+          | Logout
+    else
+      li
+        a(href='http://localhost:3009/categories')
+          i.fa.fa-book(aria-hidden='true')
+          | Book
+      li
+        a(href='http://localhost:3009/project')
+          i.fa.fa-laptop(aria-hidden='true')  
+          | Project
+      li
+        a(href='http://localhost:3009/about')
+          i.fa.fa-info-circle(aria-hidden='true') 
+          | About
+      li
+        a(href='http://localhost:3009/signup')
+          i.fa.fa-sign-in(aria-hidden='true')
+          | Login
+
+
+.slideshow-container
+  .mySlides.fade
+    img(src='images/slider1.jpg' style='width:100%')
+  .mySlides.fade
+    img(src='images/slider2.jpg' style='width:100%')
+  .mySlides.fade
+    img(src='images/slider3.jpg' style='width:100%')
+br
+div(style='text-align:center')
+  span.dot
+  span.dot
+  span.dot
+  script(src='js/app.js')

@@ -1,6 +1,6 @@
-import mysql from 'mysql';
-
-import express from 'express';
+/*Author:  Rumeysa Rana YILMAZ ,Sila ERYILMAZ*/
+const mysql = require('mysql2');
+const express = require('express');
 
 
 const connection = mysql.createConnection({

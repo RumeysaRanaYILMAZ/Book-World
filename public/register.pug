@@ -1,0 +1,39 @@
+// Authors :Rumeysa Rana YILMAZ using bootstrap
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title Sign Up
+  // Font Icon
+  link(rel='stylesheet' href='fonts/material-icon/css/material-design-iconic-font.min.css')
+  // Main css
+  link(rel='stylesheet' href='css/stylex.css')
+.main
+  section.signup
+    // <img src="images/signup-bg.jpg" alt="">
+    .container
+      .signup-content
+        form#signup-form.signup-form(method='POST')
+          h2.form-title Create account
+          .form-group
+            input#number.form-input(type='text' name='number' placeholder='Your Number')
+          .form-group
+            input#name.form-input(type='text' name='name' placeholder='Your Name')
+          .form-group
+            input#surname.form-input(type='text' name='surname' placeholder='Your Surname')
+          .form-group
+            input#email.form-input(type='email' name='email' placeholder='Your Email')
+          .form-group
+            input#password.form-input(type='text' name='password' placeholder='Password')
+            span.zmdi.zmdi-eye.field-icon.toggle-password(toggle='#password')
+          .form-group
+            input#submit.form-submit(type='submit' name='submit' value='Sign up')
+        p.loginhere
+          | Have already an account ? 
+          a.loginhere-link(href='http://localhost:3009/signup') Login here
+// JS
+script(src='vendor/jquery/jquery.min.js')
+script(src='js/mainx.js')
+// This templates was made by Colorlib (https://colorlib.com)
+

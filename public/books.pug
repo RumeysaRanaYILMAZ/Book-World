@@ -1,0 +1,48 @@
+// Authors :Rumeysa Rana YILMAZ ,Sila ERYILMAZ
+head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scalnode e=1, shrink-to-fit=no')
+    meta(name='description' content='')
+    meta(name='author' content='')
+    link(href='css/books.css' rel='stylesheet')
+    
+
+    link(href='https://fonts.googleapis.com/css?family=Indie+Flower&display=swap' rel='stylesheet')
+    
+    link(href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
+    
+    link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css')
+
+
+
+.main
+    each book in book_list
+        
+        .card
+
+            .image
+                a(href='#')
+                    img.card-img-top(src=book.img alt='')
+            .title
+                h1(name="book")
+                    | #{book.book_title}
+            .des
+                p
+                    | #{book.author}
+                p
+                    |   
+                p
+                    |  
+            .x  
+                form(action='favbook' method='POST')  
+                    input#sub(type='submit' name="book" value=book.book_id)                                       
+                    
+                        
+            
+
+    
+  
+
+
+
+

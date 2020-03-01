@@ -1,0 +1,101 @@
+/*Author: Rumeysa Rana YILMAZ,Sila ERYILMAZ*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: arial;
+    background:  rgb(95, 90, 89);
+}
+.main{
+
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.card{
+    width: 26%;
+    height: 40%;
+    display: inline-block;
+    box-shadow: 2px 2px 13px black;
+    border-radius: 5px;
+    margin: 2%;
+    background: rgb(255, 255, 255);
+}
+
+.image img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+.title{
+
+    text-align: center;
+    padding: 10px;
+
+}
+
+h1{
+    font-size: 20px;
+}
+
+.des{
+    padding: 3px;
+    text-align: center;
+
+    padding-top: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+p{
+    padding: 5px;
+}
+
+
+
+
+
+.x{
+    
+    width: 330px;
+    padding: 5%;
+    
+}
+
+
+
+input{
+    
+    text-emphasis: none;
+    color: rgba(0, 0, 0, 0);
+    border: 1px ;
+    width: 60px;
+    height: 60px;    
+    background-image: url("../images/kalp.jpg");
+    image-orientation: from-image;
+        
+    border-radius: 100%;
+    cursor: pointer;
+    
+}
+input:hover{
+    
+    border: 1px solid #4e121285;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
