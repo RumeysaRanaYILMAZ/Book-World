@@ -10,3 +10,7 @@ Used pug template engine to creating dynamic pages. You can find
 
 Frontend=Typescript+Css+pug
 Backend=TypeScript+Node js+ Express js
+
+
+You could use sample datas from mysql with just import to PHPmyadmin.
+
